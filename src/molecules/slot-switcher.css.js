@@ -3,9 +3,9 @@ import { css } from 'lit-element';
 export const style = css`
   :host .slot-switcher {
     display: block;
-    line-height: var(--chat-slot-switcher-line-height, 120%);
-    font-size: var(--chat-slot-switcher-font-size, 14px);
-    font-weight: var(--chat-slot-switcher-font-weight, 400);
+    line-height: var(--chat-slot-switcher-line-height, var(--chat-line-height, 120%));
+    font-size: var(--chat-slot-switcher-font-size, var(--chat-font-size, 14px));
+    font-weight: var(--chat-slot-switcher-font-weight, var(--chat-font-weight, 400));
   }
 
   :host .slot-switcher i.svg {
