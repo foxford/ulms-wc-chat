@@ -233,7 +233,7 @@ export class _InputElement extends LitElement {
             timer || disabled
               ? undefined
               : buttonEl({
-                  disabled: !this.__processMessage(value) || disabled,
+                  disabled: !this.__processMessage(value),
                   type: 'submit',
                 })
           }
