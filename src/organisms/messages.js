@@ -776,7 +776,7 @@ export class _MessagesElement extends LitElement {
         const actionOpts = {
           message: data,
           children: actionImages.get(key),
-          text: actionTexts.get(key),
+          text: this.i18n[actionTexts.get(key)],
           handler: (e, detail) => {
             this.dispatchEvent(new CustomEvent(key, { detail }));
           },
