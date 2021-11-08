@@ -15,7 +15,7 @@ export const actionImages = new Map([
 
 // TODO: Add i18n support
 export const actionTexts = new Map([
-  ['message-delete', 'Удалить'],
+  ['message-delete', 'DELETE'],
   ['user-disable', 'Заблокировать'],
   ['message-pin', 'Закрепить'],
   ['message-unpin', 'Открепить'],

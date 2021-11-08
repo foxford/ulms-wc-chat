@@ -214,8 +214,14 @@ export class _ChatI18NElement extends _ChatElement {
 
     const currentLanguage = this._resolveLanguage(language);
 
-    const { GO_TO_RECENT_MESSAGE, NEW_MESSAGES_COUNT, NEW_MESSAGES, SEE, PIN_MESSAGES_COUNT } =
-      this.i18n[currentLanguage] || {};
+    const {
+      DELETE,
+      GO_TO_RECENT_MESSAGE,
+      NEW_MESSAGES_COUNT,
+      NEW_MESSAGES,
+      SEE,
+      PIN_MESSAGES_COUNT,
+    } = this.i18n[currentLanguage] || {};
 
     const lastSeenIndex =
       list && lastseen !== undefined ? list.findIndex(_ => _.id === lastseen) : undefined;
@@ -238,7 +244,7 @@ export class _ChatI18NElement extends _ChatElement {
       SEE,
     };
 
-    const messagesI18n = { NEW_MESSAGES };
+    const messagesI18n = { DELETE, NEW_MESSAGES };
 
     const pinnedQnt = quantity;
     const pinnedText = format(
