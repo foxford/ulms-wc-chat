@@ -8,6 +8,13 @@ export default {
     PIN_MESSAGES_COUNT: '{count, plural, =0 {No pinned} =1 {# pinned} other {# pinned}}',
     SEE: 'See',
   },
+  es: {
+    DELETE: 'Eliminar',
+    NEW_MESSAGES_COUNT:
+      '{count, plural, =0 {Ningún mensaje nuevo} one {# nuevo mensaje} few {# nuevos mensajes} many {# mensajes nuevos}}',
+    PIN_MESSAGES_COUNT:
+      '{count, plural, =0 {Ningún mensaje anclado} =1 {# mensaje anclado} other {# mensajes anclados}}',
+  },
   it: {
     DELETE: 'Elimina',
     NEW_MESSAGES_COUNT:
